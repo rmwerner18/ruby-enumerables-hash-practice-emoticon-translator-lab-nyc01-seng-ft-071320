@@ -4,9 +4,9 @@ require 'pry'
 
 def load_library(file)
   emoticons = YAML.load_file(file)
-  binding pry
+  
 
-  #emoticons.each do |element|
+#  emoticons.each do |element|
 #    emoticons[element].to_
 #    emoticons[element] = {english: element[0], japanese: element[1]}
 #  end
