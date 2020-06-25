@@ -18,12 +18,9 @@ def get_japanese_emoticon(file, emoticon)
   count = 0
   while count < keys.length do
     if emoticons[keys[count]][:english] = emoticon
-      return emoticons[keys[count]][:japanese] 
-  end
-  emoticons.each do |element|
-    if element[:english] == emoticon
-      return element[:japanese]
+      return emoticons[keys[count]][:japanese]
     end
+    count += 1
   end
 end
 
