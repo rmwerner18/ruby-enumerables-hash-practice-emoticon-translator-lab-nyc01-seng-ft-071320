@@ -28,9 +28,12 @@ end
 def get_english_meaning(file, emoticon)
   emoticons = load_library(file)
   keys = emoticons.keys
-  emoticons.each do |element|
-    if element[:japanese] == emoticon
-      return element
+  count = 0
+  while count < keys.length do
+    if emoticons[keys[count]][:japanese] == emoticon
+      return emoticons[keys[count]]
     end
+    count += 1
   end
+  return "Sorry, that emoticon was not found"    
 end
