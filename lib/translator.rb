@@ -12,10 +12,11 @@ def load_library(file)
   emoticons
 end
 
-def get_japanese_emoticon
-  # code goes here
+def get_japanese_emoticon(file, emoticon)
+  load_library(file)
+  emoticons[emoticon][:japanese]
 end
 
-def get_english_meaning
+def get_english_meaning(file, emoticon)
   # code goes here
 end
