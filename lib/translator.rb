@@ -9,6 +9,7 @@ def load_library(file)
     emoticons[keys[count]] = {english: emoticons[keys[count]][0], japanese: emoticons[keys[count]][1]}
     count += 1
   end
+  emoticons
 end
 
 def get_japanese_emoticon
