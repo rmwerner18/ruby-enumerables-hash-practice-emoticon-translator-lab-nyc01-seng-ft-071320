@@ -1,4 +1,4 @@
-# require modules here
+require_relative "../lib/emoticons.yml"
 require 'yaml'
 require 'pry'
 
