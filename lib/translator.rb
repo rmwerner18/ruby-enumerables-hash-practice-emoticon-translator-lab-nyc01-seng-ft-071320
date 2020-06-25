@@ -1,4 +1,4 @@
-require_relative "../lib/emoticons.yml"
+require_relative "rspec ./spec/spec_helper.rb"
 require 'yaml'
 require 'pry'
 
