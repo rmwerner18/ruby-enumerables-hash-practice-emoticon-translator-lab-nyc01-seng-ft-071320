@@ -31,7 +31,7 @@ def get_english_meaning(file, emoticon)
   count = 0
   while count < keys.length do
     if emoticons[keys[count]][:japanese] == emoticon
-      return [keys[count]]
+      return keys[count]
     end
     count += 1
   end
