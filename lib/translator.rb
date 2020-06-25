@@ -7,6 +7,7 @@ def load_library(file)
   count = 0
   while count < keys.length do
     emoticons[keys[count]] = {english: emoticons[keys[count]][0], emoticons[keys[count]][1]}
+    count += 1
   end
   binding.pry
 end
