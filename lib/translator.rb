@@ -14,10 +14,12 @@ end
 
 def get_japanese_emoticon(file, emoticon)
   load_library(file)
+  binding.pry
   emoticons[emoticon][:japanese]
 end
 
 def get_english_meaning(file, emoticon)
   load_library(file)
+  binding.pry
   emoticons[emoticon][:english]
 end
