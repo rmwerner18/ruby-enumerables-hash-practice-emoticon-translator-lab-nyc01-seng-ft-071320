@@ -17,7 +17,7 @@ def get_japanese_emoticon(file, emoticon)
   keys = emoticons.keys
   count = 0
   while count < keys.length do
-    if emoticons[keys[count]][:english] = emoticon
+    if emoticons[keys[count]][:english] == emoticon
       return emoticons[keys[count]][:japanese]
     end
     count += 1
