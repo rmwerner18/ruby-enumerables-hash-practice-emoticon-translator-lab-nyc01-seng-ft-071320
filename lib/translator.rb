@@ -16,11 +16,16 @@ def get_japanese_emoticon(file, emoticon)
   emoticons = load_library(file)
   emoticons.each do |element|
     if element[:english] == emoticon
-      return element
+      return element[:japanese]
     end
   end
 end
 
 def get_english_meaning(file, emoticon)
   emoticons = load_library(file)
+  emoticons.each do |element|
+    if element[:] == emoticon
+      return element
+    end
+  end
 end
