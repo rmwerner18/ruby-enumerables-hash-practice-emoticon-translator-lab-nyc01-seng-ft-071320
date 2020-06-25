@@ -6,7 +6,6 @@ def load_library(file)
   keys = emoticons.keys
   binding.pry
 end
-end
 
 def get_japanese_emoticon
   # code goes here
