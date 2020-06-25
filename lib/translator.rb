@@ -5,7 +5,7 @@ require 'pry'
 def load_library(file)
   emoticons = YAML.load_file(file)
   emoticons.each do |element|
-    element = {english: element[0], japanese: element[1]}
+    emoticons[element] = {english: element[0], japanese: element[1]}
   end
 end
 
